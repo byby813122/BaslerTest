@@ -1,0 +1,53 @@
+﻿<Window x:Class="BaslerTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BaslerTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Basler" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="0" FontSize="20"/>
+            <WindowsFormsHost Grid.Row="1" Background="{x:Null}">
+                <wf:PictureBox x:Name="pictureBox1"/>
+            </WindowsFormsHost>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Grab" Grid.Column="0" Margin="20,0,20,0" Click="Grab_Click" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="KeepGrab" Grid.Column="1" VerticalAlignment="Center" FontSize="15"/>
+                    </Grid>
+                </Button>
+                <Button x:Name="GrabOnce" Grid.Column="1" Margin="20,0,20,0" Click="GrabOnce_Click">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="GrabOnce" Grid.Column="1" VerticalAlignment="Center" FontSize="15"/>
+                    </Grid>
+                </Button>
+            </Grid>
+            <!--<Image x:Name="ShowImage" Grid.Row="2" HorizontalAlignment="Center"/>-->
+        </Grid>
+
+    </Grid>
+</Window>

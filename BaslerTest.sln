@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaslerTest", "BaslerTest\BaslerTest.csproj", "{8BEDE75D-5ECB-48EA-B935-3FCCD167D200}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BEDE75D-5ECB-48EA-B935-3FCCD167D200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEDE75D-5ECB-48EA-B935-3FCCD167D200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEDE75D-5ECB-48EA-B935-3FCCD167D200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEDE75D-5ECB-48EA-B935-3FCCD167D200}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {523C26F7-24C2-4B58-9F74-03E65B9E10DA}
+	EndGlobalSection
+EndGlobal
